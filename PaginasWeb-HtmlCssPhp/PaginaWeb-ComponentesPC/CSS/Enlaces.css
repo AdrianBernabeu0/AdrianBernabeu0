@@ -1,0 +1,39 @@
+
+header {
+  padding: 30px;
+}
+nav {
+  padding: 30px;
+}
+section {
+  padding: 30px;
+  height: 450px;
+}
+footer {
+  height: 160px;
+}
+.logo {
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+}
+.enllacos_interes {
+  text-align: center;
+  width: 100%;
+  margin-top: 1px;
+  font-family: 'Rowdies', cursive;
+}
+.llistat_enllacos {
+  text-align: center;
+  width: 28%;
+  height: 80%;
+  margin-top: 2%;
+  margin-left: 4%;
+  font-family: 'Rowdies', cursive;
+  float: left;
+}
+p a {
+  color: blue;
+}
+

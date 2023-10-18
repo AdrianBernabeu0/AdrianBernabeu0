@@ -1,0 +1,41 @@
+header {
+  padding: 30px;
+}
+nav {
+  padding: 30px;
+}
+section {
+    padding: 30px;
+    height: 500px;
+  }
+footer{
+    height: 160px;
+ 
+}
+.logo {
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+}
+.imatge{
+    border: 1px solid rgb(9, 210, 237);
+    width: 40%;
+    float: right;
+    height: 70%;
+}
+.presentacio{
+    width: 60%;
+    height: 70%;
+}
+.titulo_presentacio{
+  font-family: 'Slackey', cursive;
+  font-size: 40pt;
+  text-align: center;
+}
+.cont_presentacio{
+  font-family: 'Slackey', cursive;
+  text-align: justify;
+  font-size: 20px;
+  padding: 10px;
+}

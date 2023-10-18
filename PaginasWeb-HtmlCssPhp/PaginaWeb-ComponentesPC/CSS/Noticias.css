@@ -1,0 +1,38 @@
+header {
+  padding: 30px;
+}
+nav {
+  padding: 30px;
+}
+section {
+  padding: 30px;
+  height: 1600px;
+}
+footer{
+  height: 160px;
+
+}
+.logo {
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+}
+.ultimes_noticies{
+  text-align: center;
+  padding: 20px;
+}
+.titol_noticies{
+  text-align: center;
+  margin-left: 150px;
+  margin-top: 50px;
+  height: 40%;
+  width: 39%;
+  float: left;
+}
+h2{
+  font-family: 'Rowdies', cursive;
+}
+h3{
+  font-family: 'Rowdies', cursive;
+}
