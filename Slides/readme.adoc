@@ -1,0 +1,19 @@
+= ABP Projecte 1: Slides
+
+== Introducció
+
+=== Membres 
+El nostre grup està compost per Rubén Tabasco, Nil Arilla, Brian Arrua i Adrià Bernabeu.
+
+
+
+=== Webgrafía
+    ** [underline]#Trello:# https://trello.com/invite/b/SiWxxXm5/ATTI40ed5c0767af5f3a55d9c8caa8e6e67dA902BCD6/grup5-ruben-nil-adrian-brian
+    ** [underline]#Mockups:#  https://www.figma.com/file/p4nYtE7912JssJxcB6YRH2/SLIDES?type=design&node-id=0%3A1&mode=design&t=nWSJBpeHDsghQSjJ-1
+    ** [underline]#Icones:#  https://www.flaticon.es/packs/online
+    ** [underline]#Tipografia:#  https://fonts.google.com/specimen/Nunito?query=nunito
+    ** [underline]#Isard:#  AdrianBernabeu-192.168.50.164
+
+=== Portafolis
+** [underline]#Adrian Bernabeu:# https://github.com/AdrianBernabeu0
+** [underline]#Brian Arrua:# https://github.com/BrianArrua96/BrianArrua96
