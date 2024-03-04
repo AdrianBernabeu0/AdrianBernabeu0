@@ -1,0 +1,82 @@
+=== La paleta de colors que utilitzarem serà aquesta
+
+image::imatges/colorPalette/colorPalette.png[]
+
+=== [underline]#Tipografia:#
+==== Com a tipografia utiltzarem la "Nunito"
+image::imatges/colorPalette/tipografia.png[]
+
+=== [underline]#Contraste:#
+
+image::imatges/colorPalette/750082.png[]
+
+image::imatges/colorPalette/FBB1FF.png[]
+
+image::imatges/colorPalette/FC51FF.png[]
+
+== Paleta de colors dels diferents estils aplicables a la presentació
+
+== Estil 1: DARK
+
+image::imatges/colorPalette/darkColorPalette.png[]
+
+.Contrast d'aquesta
+
+image::imatges/colorPalette/darkColor1.png[]
+
+image::imatges/colorPalette/darkColor2.png[]
+
+image::imatges/colorPalette/darkColor3.png[]
+
+== Estil 2: SNOW
+
+image::imatges/colorPalette/blueColorPalette.png[]
+
+.Contrast d'aquesta
+
+image::imatges/colorPalette/blueColor1.png[]
+
+image::imatges/colorPalette/blueColor2.png[]
+
+image::imatges/colorPalette/blueColor3.png[]
+
+=== Icones:
+==== Cada cop que el ratolí passi per sobre d'una icona s'activarà un efecte hover que augmentarà el seu tamany en una escala de 1.1:1;
+.Utilitzarem aquest icona per anar a la pàgina home cada cop que sigui clickada;
+image::imatges/icones/hogar.png[]
+.Per esborrar una presentació que ya ha estat creada;
+image::imatges/icones/papelera.png[]
+.Serveix per editar la presentació i les seves diapositives;
+image::imatges/icones/editar.png[]
+.Permet copiar la presentació amb les seves diapositives;
+image::imatges/icones/copiar.png[]
+.Permet veure una vista previa de com queda la presentació;
+image::imatges/icones/ojo.png[]
+.Permet afegir una nova diapositiva 
+image::imatges/icones/afegir.png[]
+.Permet baixar una posicio de la diapositiva
+image::imatges/icones/abaix.png[]
+.Permet pujar una posicio de la diapositiva
+image::imatges/icones/adalt.png[]
+=== Botons:
+==== Cada cop que el ratolí passi per sobre d'un botó, s'activarà un efecte hover que farà un canvi de color en aquest;
+.Aquest botó permet crear més presentacions;
+image::imatges/botons/crearPrs.png[]
+.Després de fer tots els canvis a les diapositives, el que farà el botó és guardar la presentació;
+image::imatges/botons/guardarPrs.png[]
+.Permet publicar la presentacio
+image::imatges/botons/publica.PNG[]
+.Permet despublicar la presentacio
+image::imatges/botons/despublica.PNG[]
+.Quan esta publicada la presentacio sortira aquest boto que posara la URL de la presentacio
+image::imatges/botons/mostraURL.PNG[]
+.Permet veure les altres diapositives dintre de la vista client 
+image::imatges/botons/mostraMiniatures.PNG[]
+.Permet acabar la visualitzacio 
+image::imatges/botons/acabaVisualitzacio.PNG[]
+.Permet previsualitzar la presentacio
+image::imatges/botons/previsualitzarPresentacio.PNG[]
+.Permet previsualitzar la diapositiva
+image::imatges/botons/previsualitzarDiapositiva.PNG[]
+
+

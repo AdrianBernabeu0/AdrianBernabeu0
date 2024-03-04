@@ -1,0 +1,867 @@
+/*INICI GLOBAL*/
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  position: static;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #750082;
+}
+
+.nom {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.iconoHome{
+  padding-left: 7vh;
+}
+
+
+.iconoHome:hover {
+  transform: scale(1.1);
+}
+
+/* FI GLOBAL */
+
+/* INICI PANTALLA CREAR PRESENTACIÓ */
+#PadrecontenedorDiapositivas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 38vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0vh 9.5vh !important;
+  margin: 3.16vh;
+}
+
+
+
+.diapositivesAlContenidorScrolleable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 19vh !important;
+  border: 2px solid black;
+  margin: 1.9vh;
+  flex-shrink: 0;
+}
+
+.diapositivesAlContenidorScrolleableTest {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 19vh !important;
+  border: 2px solid black;
+  margin: 1.9vh;
+  flex-shrink: 0;
+}
+
+.titolDiapositivesScroll {
+  height: 4.4vh;
+  margin: 3.16vh;
+  max-width: 100%;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+.tipusDiapositivesScroll{
+  flex: 1;
+  margin: 3.16vh;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: left;
+  font-size: 1.2vh;
+}
+.contingutDiapositivesScroll {
+  flex: 1;
+  margin: 3.16vh;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: left;
+  font-size: 0.3rem;
+}
+
+.dark .contingutDiapositivesScroll,
+.dark .titolDiapositivesScroll,
+.dark .tipusDiapositivesScroll {
+  color: white;
+}
+
+.contenedorDiapositivas {
+  width: 100%;
+}
+
+hr {
+  width: 100%;
+}
+
+.divBodyPresentacions {
+  display: flex;
+  flex: 1;
+}
+
+.opcionsPresentacio {
+  display: flex;
+  flex-direction: column;
+  width: 19rem;
+  border-right: 3px solid black;
+  align-items: center;
+  padding: 0rem 3.5rem;
+}
+
+.titolDescripcio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 3px solid black;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+#enviaDadesPresentacio {
+  gap: 3.6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.dark>.inputOpcionsPesentacio {
+  color: white;
+}
+
+.inputOpcionsPesentacio {
+  /* width: 100%; */
+  background-color: transparent;
+  padding: 1.5rem;
+}
+
+.diapositivesAlContenidorScrolleableNomesTitol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 19vh !important;
+  border: 2px solid black;
+  margin: 1.9vh;
+  flex-shrink: 0;
+}
+
+.inputTitolOpcionsPresentacio {
+  /* margin-top: 3rem; */
+  /* padding: 4.4vh 1.2vh; */
+  font-size: 3rem;
+}
+
+.diapositivadark {
+  border: 1px solid white;
+}
+
+.diapositivablue {
+  border: 1px solid black;
+}
+
+.inputContingutOpcionsPresentacio {
+  flex: 1;
+  height: 100%;
+  margin-bottom: 3.16vh;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+.diapositiva {
+  display: flex;
+  border: 3px solid black;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 0vh 3.6vh 0vh 2.4vh; */
+  padding: 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  gap: 1.5rem;
+}
+
+
+.afegirDiapositives {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  padding: 2.4vh;
+}
+
+.botonDespegable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.opcionsDiapositiva {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}
+
+.divBotoGuardarPresentacio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-left: 3.6vh;
+  padding-right: 3.6vh;
+
+}
+
+.botoGuardarPresentacio,.botoPrevisualitzar{
+  /* padding: 1.9vh; */
+  height: 6.3vh;
+  background-color: #750082;
+  color: white;
+  margin-top: 2.4vh;
+  border-radius: 1.2vh;
+}
+
+
+#eliminarSinColor {
+  border: 3px solid black;
+}
+
+#eliminarConColor {
+  border: 3px solid red;
+}
+
+.botoGuardarPresentacio:hover {
+  background-color: #FF51FF;
+  color: black;
+}
+
+.afegirDiapositiva {
+  /* padding: 1.9vh; */
+  height: 6.3vh;
+  width: 12.6vh;
+  background-color: #750082;
+  color: white;
+  border-radius: 1.2vh;
+  margin: 2.4vh;
+}
+
+.afegirDiapositiva:hover {
+  background-color: #FF51FF;
+  color: black;
+}
+
+.boxDiapositives {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+  padding: 3.6vh;
+}
+
+.botonVolverVistaPrevia {
+  display: flex;
+  background-color: #750082;
+  height: 10%;
+}
+
+textarea{
+  resize: none;
+}
+
+/* FI PANTALLA CREAR PRESENTACIÓ */
+
+
+/* INICI PANTALLA HOME  */
+
+.divBodyHome {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.ocult {
+  display: none;
+}
+
+.botoCrearPresentacio {
+  padding: 1rem;
+  border: none;
+  background-color: #750082;
+  color: white;
+  border-radius: 10px;
+}
+
+#divBoto{
+  padding: 1.5rem;
+}
+
+.botoCrearPresentacio:hover {
+  background-color: #FF51FF;
+}
+
+#presentacions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.presentacions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19rem;
+  height: 19rem;
+  border: 3px solid black;
+  margin: 3.2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#missatge {
+  color: black;
+  text-align: center;
+}
+
+.icones {
+  margin: 0.5rem;
+  width: 2rem;
+}
+
+.textDivPresentacio {
+  align-self: center;
+  font-size: 2rem;
+  color: black;
+}
+
+.icones:hover {
+  transform: scale(1.1);
+}
+
+
+/* .divButtonOptions {
+  display: flex;
+  border: 3px lime;
+  width: 100%;
+  justify-content: space-around;
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#missatge {
+  color: black;
+  text-align: center;
+}
+
+.divMissatge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.divOptionsIcona {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.iconesOptions:hover {
+  transform: scale(1.1);
+}
+
+.textDivPresentacio {
+  align-self: center;
+  font-size: 2rem;
+  color: black;
+}
+
+.icones:hover {
+  transform: scale(1.1);
+}
+
+#confirmaOCancela {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonEliminacio {
+  height: 3.8vh;
+  width: 6.3vh;
+  border-radius: 1.2vh;
+}
+
+.buttonsEleccioEliminar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.confirma {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.cancela {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.preguntaEliminacio {
+  text-align: center;
+  font-size: 2vh;
+  border: none;
+}
+
+.contenidorWarning {
+  position: absolute;
+  align-self: center;
+  margin: 12.66vh;
+  padding: 2.5vh;
+  border-radius: 1.2vh;
+  display: none;
+  background-color: #FBB1FF;
+}
+
+.missatgeEstatDelete {
+  border: none;
+  color: black;
+  flex: 1;
+}
+
+.buttonPublicaPresentacio {
+  background-color: #750082;
+  color: white;
+  margin-top: 1vh;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.contenidorBotonsPublicar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.urlGenerada {
+  display: none;
+}
+
+.contenidorUrlPublicacio {
+  position: absolute;
+  align-self: center;
+  margin: 12.66vh;
+  padding: 2.5vh;
+  border-radius: 1.2vh;
+  display: none;
+  background-color: #FBB1FF;
+}
+
+.copiaUrl {
+  margin: 0px 10px;
+}
+
+/* FI PANTALLA HOME */
+
+/* INICI PANTALLA SELECCIÓ D'ESTILS*/
+.boxSeleccioEstils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0rem 3rem;
+}
+
+.botoConfirmarSeleccio {
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
+}
+
+.confirmarSeleccio {
+  padding: 1rem;
+  background-color: #750082;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.representacioEstilSeleccionat {
+  width: 35rem;
+  border: 3px solid black;
+  padding: 2rem;
+  height: 30rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+
+.titolRepresentacio, .contingutRepresentacio{
+  border: 2px solid black;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.titolRepresentacio {
+  height: 3.5rem;
+}
+
+.contingutRepresentacio {
+  flex: 1;
+}
+
+.textRepresentacio {
+  border: none;
+  font-size: 1rem;
+}
+
+.blue {
+  background-image: url("../../Documentacion/imatges/colorPalette/blueBackground.png");
+}
+
+
+.dark {
+  background-image: url("../../Documentacion/imatges/colorPalette/darkBackground.png");
+}
+
+.dark>.titolContingutRepresentacio {
+  border: 2px solid white;
+}
+
+.dark>.titolContingutRepresentacio>p {
+  color: white;
+}
+
+
+
+
+/* FI PANTALLA SELECCIÓ D'ESTILS*/
+
+
+/* INICI VISTA PRÈVIA PRESENTACIÓ */
+.acabaDeVisualitzar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.9vh;
+  margin: 3.8vh;
+  max-width: 25.3vh;
+}
+
+.vistaPreviaPresentacioDiapositives, .vistaPreviaPresentacioDiapositivesClient {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 6.3vh;
+  padding: 12.66vh;
+}
+
+.titolVistaPrevia,
+.titolVistaPreviaSol,
+.contingutVistaPrevia {
+  border: none;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.dark .titolVistaPrevia,
+.dark .titolVistaPreviaSol,
+.dark .testVistaPrevia,
+.dark .contingutVistaPrevia {
+  color: white;
+}
+
+
+.titolVistaPrevia {
+  padding: 3.8vh;
+  font-size: 4vw;
+}
+
+.titolVistaPreviaSol {
+  height: 100%;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.contingutVistaPrevia {
+  height: 100%;
+  flex: 1;
+  font-size: 3.5vw;
+  text-align: left;
+  padding: 3.8vh;
+}
+
+.fletxesCanviDiapositiva {
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+  display: flex;
+  padding: 1.9vh;
+  margin: 3.8vh;
+}
+
+.diapositivaEndavant,
+.diapositivaEnrere {
+  margin: 1.9vh;
+}
+
+.darkButton,
+.blueButton {
+  border-radius: 1.2vh;
+  border: none;
+}
+
+.darkButton {
+  background-color: #FBB1FF;
+}
+
+.blueButton {
+  background-color: #750082;
+  color: white;
+}
+
+.mostraMiniatures {
+  padding: 2.5vh;
+  margin: 0vh 2.5vh;
+  border: none;
+  border-radius: 1.2vh;
+}
+.testVistaPrevia {
+  /* padding: 0;
+  margin: 0; */
+  font-size: 3rem;
+}
+
+.contenidorTests{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mostraMiniaturesBlue {
+  background-color: #750082;
+  color: white;
+}
+
+.mostraMiniaturesDark {
+  background-color: #FBB1FF;
+}
+
+.contenidorMiniatures {
+  position: absolute;
+  padding: 3.8vh;
+  overflow-x: scroll;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 80%;
+}
+
+.diapositivaDinsCarrusel {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 38vh;
+  height: 19vh !important;
+  border: 2px solid black;
+  margin: 1.9vh;
+  flex-shrink: 0;
+}
+
+.testPreguntaVistaPrevia{
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.testOpcionsVistaPrevia{
+  display: flex;
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
+  /* gap: 0.5rem; */
+  font-size: 2rem;
+  padding:  0rem 2rem 2rem 2rem;
+}  
+
+.radioVistaPrevia{
+  margin: 1rem;
+}
+
+#dialeg{
+  padding: 2rem;
+  background-color: #FBB1FF;
+  border-radius: 10px;
+  border: 3px solid #FF51FF;
+}
+
+.buttonsAssociada{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* flex: 1; */
+}
+
+#yesButton, #noButton{
+  padding: 1rem;
+  background-color: #750082;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.contenidorPregunta{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dark .testPreguntaVistaPrevia{
+  color: white;
+}
+
+.dark .labelTest{
+  color: white;
+}
+
+.labelTest{
+  font-size: 2rem;
+}
+
+.diapositivesAlContenidorScrolleableTest{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+/* FI VISTA PREVIA PRSENTACIÓ */
+
+/* INICI PANTALLA INTRODUÏR PIN */
+.contenidorWarningPin {
+  position: absolute;
+  align-self: center;
+  margin: 12.66vh;
+  padding: 2.5vh;
+  display: flex;
+  border-radius: 1.2vh;
+  background-color: #FBB1FF;
+  border: 2px solid black;
+}
+
+.contenidorFormulariPIN {
+  margin: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 44.3vh;
+  height: 44.3vh;
+  border: 3px solid black;
+  border-radius: 1.2vh;
+  background-color: #FBB1FF;
+}
+
+.contenidorFormulariPIN * {
+  display: flex;
+}
+
+.creuTancaFormulari {
+  align-self: flex-end;
+  margin: 1.9vh;
+}
+
+
+#formulariPIN {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.8vh;
+  padding: 0vh 3.8vh 3.8vh 3.8vh;
+}
+
+.labelPin {
+  text-align: center;
+}
+
+#inputPin {
+  padding: 1.9vh;
+}
+
+.publicada {
+  border: 3px solid #FF51FF;
+  box-shadow: 0 0 2.5vh #FF51FF;
+}
+
+.noPublicada {
+  border: 3px solid black;
+}
+
+/* FI PANTALLA INTRODUÏR PIN */
+/* Inici de editar Presentacion*/
+
+/*Fi de editar Presentacion*/
+
+.contenidorBotonsPrevisualitzacio {
+  display: flex;
+
+}
+
+.previsualitzar {
+  background-color: #750082;
+  color: white;
+  justify-content: space-around;
+  margin: 0.9vh;
+}
+
+.estils {
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.darkEstils {
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.blueEstils {
+  width: 100%;
+  padding: 0.25rem;
+}

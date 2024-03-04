@@ -1,0 +1,63 @@
+
+=== Sketch Pantalla HOME
+
+image::imatges/pantalles/sketchRefactorPantallaHome.jpg[]
+
+
+=== Sketch Pantalla afegir diapositiva
+
+image::imatges/pantalles/sketchAfegirPresentacioBBDD.jpg[]
+
+// === Sketch Pantalla Editar Presentacion
+
+// image::imatges/pantalles/[]
+
+=== Sketch Pantalla Previsualització Diapositiva Titol i Titol Contingut 
+
+image::imatges/pantalles/sketchPrevisualitzarDiapositivaTitolContingut.jpg[]
+
+=== Sketch Pantalla Previsualització Diapositiva Titol Pregunta
+
+image::imatges/pantalles/sketchPrevisualitzarDiapositivaTitolPreguntes.jpg[]
+
+=== Mockups
+
+== Pantalla HOME
+
+image::imatges/pantalles/mockupHome.png[]
+
+== Pantalla Crear Presentació
+
+image::imatges/pantalles/mockupCrearPresentacio.png[]
+
+== Pantalla editar estil (les dues opcions)
+
+image::imatges/pantalles/mockupEstilDark.png[]
+
+image::imatges/pantalles/mockupEstilBlue.png[]
+
+== Pantalla Previsualitzar Diapositiva Titol (amb els dos estils)
+
+image::imatges/pantalles/mockupPrevisualitzarDiapositivaTitolBlue.PNG[]
+
+image::imatges/pantalles/mockupPrevisualitzarDiapositivaTitolDark.PNG[]
+
+== Pantalla Previsualitzar Diapositiva Titol i Contingut (amb els dos estils)
+
+image::imatges/pantalles/mockupPrevisualitzarDiapositivaTitolContingutBlue.PNG[]
+
+image::imatges/pantalles/mockupPrevisualitzarDiapositivaTitolContingutDark.PNG[]
+
+== Pantalla Previsualitzar Diapositiva Titol i Preguntes (amb els dos estils)
+
+image::imatges/pantalles/mockupPrevisualitzarDiapositivaTitolPreguntesBlue.PNG[]
+
+image::imatges/pantalles/mockupPrevisualitzarDiapositivaTitolPreguntesDark.PNG[]
+
+== Pantalla de editar Presentacio el sketch i el mockup
+
+image::imatges/pantalles/PantallaEditarPresentacio.png[]
+
+image::imatges/pantalles/SketchEditaPresentacio.jpg[]
+
+image::imatges/pantalles/MockupEditarPresentacio.png[]
