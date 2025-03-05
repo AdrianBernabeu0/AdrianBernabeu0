@@ -1,0 +1,62 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.8;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  margin: 40px 0 30px;
+  font-size: 1.5 rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.enllaçQuadreComandaments {
+  text-decoration: none;
+  display: block;
+  margin: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  background: #F2F0EB;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    background-color: #f5efe0;
+  }
+}
+
+
+.hotels-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.hotels-grid .enllaçQuadreComandaments {
+  flex: 1 1 calc(33.333% - 30px);
+  box-sizing: border-box;
+}
+
+/*Disseny resposniu */
+@media (max-width: 1024px) {
+  .hotels-grid .enllaçQuadreComandaments {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  .hotels-grid .enllaçQuadreComandaments {
+    flex: 1 1 100%;
+  }
+}

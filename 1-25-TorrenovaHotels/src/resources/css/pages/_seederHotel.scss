@@ -1,0 +1,91 @@
+.contenedorSeederHotel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.contenedorBtnSeederHotel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.formSeederHotel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #F2F0EB;
+  padding: 20px;
+  border: 1px solid #AE7854;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+
+  input {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+    &:focus {
+      border-color: #84583A; 
+      outline: none;
+      box-shadow: 0 0 8px rgba(174, 120, 84, 0.6); 
+    }
+  }
+}
+
+.labelSeederHotel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 0;
+  color: #000000;
+}
+
+/* Contenidor per als botons de ràdio de la pàgina Seeder Hotel */
+.radioSeederHotel {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"] + label {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: #AE7854;
+    color: #F2F0EB;
+  }
+}
+
+button.btn-primary-seederHotel {
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #AE7854;
+  color: #F2F0EB;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary-seederHotel:hover {
+  background-color: #84583A;
+}

@@ -1,0 +1,295 @@
+/* Restableix els estils per defecte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Assegura que el padding i les vores s'inclouen en l'amplada i l'alçada totals de l'element */
+}
+
+html, body {
+  width: 100%;
+  height: 100%; /* Assegura que el cos ocupi tota l'alçada de la finestra */
+}
+
+/* Estils per a la taula */
+th, td {
+/* Restableix els estils per defecte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Assegura que el padding i les vores s'inclouen en l'amplada i l'alçada totals de l'element */
+}
+
+html, body {
+  width: 100%;
+  height: 100%; /* Assegura que el cos ocupi tota l'alçada de la finestra */
+}
+
+/* Estils per a la taula */
+th, td {
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap; 
+  border: 1px solid #F2F0EB;
+}
+
+.li-roomManagment {
+  list-style: none;
+  font-weight: bold;
+}
+
+.contenedorBtnReserva {
+  margin-top: 20px;
+  position: relative;
+  left: 25px;
+}
+
+
+
+.dialog {
+  &-roomManagment {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombra suau per a un toc elegant */
+    border-radius: 24px; /* Vores lleugerament arrodonides */
+    width: 50%;
+    text-align: left;
+  }
+  &-check-titol {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #F2F0EB;
+    text-align: left;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    overflow: hidden; /* Evita el desplaçament */
+  }
+}
+
+#btnCrearReserva {
+  background-color: #24ba33;
+  color: black;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #1ea42b;
+  }
+}
+
+.btnLogoutRoomManagment {
+  background-color: #AE7854;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 12px 28px;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #84583A;
+  } 
+}
+
+/* Estil del botó de tancament per al diàleg */
+.btn-close-dialog-roomManagement {
+  border: none;
+  float: right;
+  background-color: transparent;
+  margin-bottom: 8px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.2s ease; /* Efecte suau en passar el ratolí */
+  &:hover {
+    color: black; /* Color més fosc en passar el ratolí */
+    transform: scale(1.05); /* Efecte de escala subtil */
+  }
+}
+
+/* Estil del contenidor del diàleg */
+.div-dialog-roomManagment {
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box; /* El padding no afecta les dimensions */
+  text-align: left;
+}
+
+.habitacion {
+  padding: 12px;
+  border-bottom: 1px solid #F2F0EB; /* Vora lleugera */
+  border-right: 1px solid #F2F0EB;
+  border-left: 1px solid #F2F0EB;
+  align-items: center;
+  background-color: #f8f9fa; /* Fons gris clar */
+}
+
+.totesReserves {
+  display: grid;
+  grid-template-columns: repeat(62, 1fr);
+  border-bottom: 1px solid #F2F0EB;
+  border-right: 1px solid #F2F0EB;
+}
+
+.div-check {
+  &-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  &-titol {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  &-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+/* Estil del contenidor de la llista del diàleg */
+.ul-dialog-roomManagment {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinea els elements a la part superior esquerra */
+  align-content: flex-start; /* Alinea el contingut a la part superior esquerra */
+  font-size: 16px;
+  gap: 6px;
+  padding: 12px;
+}
+
+/* Estil del contenidor del calendari */
+.calendar-container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: auto;
+  margin: 30px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombra subtil */
+}
+
+.habitacions {
+  display: grid;
+}
+
+/* Estil del contenidor dels dies */
+.dies {
+  display: grid;
+  grid-template-columns: repeat(31, 1fr);
+}
+
+/* Estil individual del dia */
+.days {
+  padding: 12px;
+  color: #333;
+  border-bottom: 1px solid #F2F0EB;
+  border-right: 1px solid #F2F0EB;
+  border-top: 1px solid #F2F0EB;
+  background-color: #f8f9fa; /* Fons gris clar */
+}
+.dayAvui {
+  background-color: #AE7854; /* Fons gris clar */
+  color:#000000;
+}
+
+/* Estil del contenidor de la gestió d'habitacions */
+.container-roomManagment {
+  width: 100%; /* Assegura l'amplada completa */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 24px;
+  margin-top: 5px; /* Augmentat per a millor espaiat */
+  padding-bottom: 100px;
+}
+
+/* Estil del contenidor dels botons */
+.container-btn {
+  &-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top-left-radius: 24px;
+    background-color: #f0f0f0;
+    padding: 12px;
+  }
+  &-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top-right-radius: 24px;
+    background-color: #f0f0f0;
+    padding: 12px;
+  }
+}
+
+/* Estils de les reserves */
+.reserves {
+  padding: 12px;
+  color: black;
+  border: 2px solid #F2F0EB;
+  transition: background-color 0.3s ease; /* Efecte suau en passar el ratolí */
+  display: flex;
+  align-items: center; /* Centra verticalment el text */
+  text-align: center;
+  overflow: hidden; /* Amaga el text que desborda */
+  text-overflow: ellipsis; /* Afegeix punts suspensius (...) si el text és massa llarg */
+  white-space: nowrap; /* Evita el salt de línia del text */
+  &-pasada {
+    background-color: #e75858; /* Vermell per a reserves passades */
+    border-radius: 12px;
+    border: 2px solid #F2F0EB;
+    padding: 12px;
+  }
+  &-curso {
+    background-color: #0ec120; /* Verd per a reserves actuals */
+    color: black;
+    border-radius: 12px;
+    border: 2px solid #F2F0EB;
+    padding: 12px;
+  }
+  &-futuro {
+    background-color: #FF9F1C; /* Taronja per a reserves futures */
+    border-radius: 16px;
+    border: 2px solid #F2F0EB;
+    padding: 12px;
+  }
+}
+
+/* Estil per truncar el text amb punts suspensius */
+.truncate-text {
+  width: 100%;
+  white-space: nowrap; /* Evita el salt de línia del text */
+  overflow: hidden; /* Amaga el text que desborda */
+}

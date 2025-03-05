@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+
+h2 {
+  font-size: 42px; }
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  color: white; }
+
+footer {
+  border: 5px solid black; }

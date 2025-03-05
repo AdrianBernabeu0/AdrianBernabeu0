@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contenedorHero {
+  position: relative;
+  background-image: url('/img/Habitacion1.jpg'), url('/img/Habitacion2.jpg'), url('/img/Habitacion3.jpg'), url('/img/Habitacion4.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh;
+  animation: canviarFons 20s infinite;
+}
+
+.contenedorCerca {
+  position: relative; // Asegura que z-index funcione
+  z-index: 1; // Mayor que el hero
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  border-radius: 8px;
+}
+
+@keyframes canviarFons {
+  0% {
+    background-image: url('/img/Habitacion1.jpg');
+  }
+  25% {
+    background-image: url('/img/Habitacion2.jpg');
+  }
+  50% {
+    background-image: url('/img/Habitacion3.jpg');
+  }
+  75% {
+    background-image: url('/img/Habitacion4.jpg');
+  }
+  100% {
+    background-image: url('/img/Habitacion1.jpg');
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contenedorHero h1 {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 210px;
+}
+
+.contenedorValors {
+  padding: 32px 16px;
+  text-align: center;
+  background: #fff;
+}
+
+.contenedorValors h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.valors {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.targetaValor {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+}
+.targetaValor.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.targetaValor img {
+  width: 50px;
+  margin-bottom: 16px;
+}
+
+.targetaValor h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.targetaValor p {
+  font-size: 16px;
+  color: black;
+}
+
+.contenedorPromocions {
+  padding: 32px 16px;
+  background: #f4f4f9;
+}
+
+.contenedorPromocions h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.promocions {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  align-items: center;
+  width: 89%;
+  margin: 21px 21px 40px 21px;
+}
+
+.promocions div {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  background-color: black;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.targetaPromocio {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.targetaPromocio img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.targetaPromocio h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.targetaPromocio p {
+  font-size: 16px;
+  color: black;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.prev {
+  left: -15px;
+}
+
+.next {
+  right: -15px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+// Estils Escritori
+@media screen and (min-width: 481px) {
+  .contenedorHero {
+    background-attachment: fixed;
+  }
+
+  .contenedorHero h1 {
+    font-size: 32px;
+  }
+
+  .contenedorHero p {
+    font-size: 16px;
+  }
+
+  .btnHero {
+    font-size: 17px;
+    padding: 10px 20px;
+  }
+}
+
+// Estils Escritori
+@media screen and (min-width: 769px) {
+  .valors {
+    flex-direction: row;
+  }
+
+  .promocions {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .prev {
+    left: -50px;
+  }
+
+  .next {
+    right: -50px;
+  }
+
+  .targetaPromocio {
+    margin: 80px;
+  }
+
+  .targetaValor {
+    width: auto;
+    margin: initial;
+  }
+
+  .contenedorHero h1 {
+    font-size: 32px;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,21 @@
+footer > a{
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.check-in-link{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #eb4747;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  &:hover{
+    background-color: #C21227;
+  }
+}

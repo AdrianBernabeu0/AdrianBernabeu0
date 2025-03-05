@@ -1,0 +1,40 @@
+= Grup01 - torrenova
+
+==== Membres del grup01
+El nostre grup està compost per: Adrian Bernabeu, Brian Tobias Arrua, Manuel Ordoñez Gomez, Carlo Torres Roca.
+
+link:https://www.figma.com/design/TFTZ9wGmUbQwclwz17KroX/Torrenova---Grup1?node-id=0-1&node-type=canvas&t=bV4tXxCOiN7z8fDb-0[R01: guia d'estils i mockups a Figma]
+
+link:https://drive.google.com/file/d/1VGM2NsmUcsqUPLeXHJpIcI2LALi7D15I/view?usp=sharing[R02: Diagrama de Base de Dades]
+
+=== IPs SERVERS AWS
+Màquina Producció: Brian Tobias Arrua Dominguez IP elastica en producciò 67.202.46.67.
+
+Màquina Develop: Carlo Torres Roca.
+
+Màquines de Proves: Manuel Ordoñez Gomez i Adrián Bernabeu 
+
+=== DNS del domini
+
+Web: https://web.torrenovahotels.store/
+
+Aplicació: https://bko.torrenovahotels.store/
+
+
+=== Portfolis
+
+Carlo Torres:
+https://portfolio-carlo-torres.vercel.app/
+
+
+Manuel Ordoñez:
+manuel-ordonez-porfolio.vercel.app
+
+Adrián Bernabeu:
+https://portfolio25-adrianbernabeu0s-projects.vercel.app/
+
+
+Brian Tobias:
+
+=== Video torrenovahotels
+https://drive.google.com/file/d/1dK8nINTDenJE-DvGZ3cVN5CE3tWkguXE/view?usp=sharing

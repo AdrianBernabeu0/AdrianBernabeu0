@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// Definir punts de trencament
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Mixin per a media queries
+@mixin respond-to($media) {
+  @media (min-width: #{if($media == tablet, $breakpoint-tablet, $breakpoint-desktop)}) {
+    @content;
+  }
+}
+
+.containerRoom {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.no-rooms {
+  font-size: 18px;
+  color: #f9f9f9;
+  text-align: center;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: 1fr; // Mòbil: 1 columna
+  gap: 15px;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(2, 1fr); // Tauleta: 2 columnes
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(4, 1fr); // Escriptori: 4 columnes
+  }
+}
+
+.room-card {
+  background-color: #dfdcdc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.room-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-basis: auto; // Permet que les imatges es distribueixin en noves línies
+}
+
+.room-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+  }
+}

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: torrenova
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: torrenova
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 1234
+    ports:  
+      - "3307:3306"

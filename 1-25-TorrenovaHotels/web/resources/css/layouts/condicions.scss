@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #AE7854;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: black;
+    border-bottom: 2px solid #AE7854;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 1rem;
+    color: black;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+strong {
+    color: #C21227;
+}
+
+
+/* Disseny responsiu */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    section h2 {
+        font-size: 1.25rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+section h2, h1 {
+    letter-spacing: 0.05rem;
+}

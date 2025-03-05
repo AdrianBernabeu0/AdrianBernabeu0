@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.cercaRapida {
+    display: grid; 
+    gap: 1rem; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+// Estils per a la classe cerca i els seus child elements
+.cerca {
+    &-div {
+        display: grid;
+        gap: 0.5rem; // Espaiat entre elements
+        position: relative; 
+
+        &-button {
+            display: flex; 
+            justify-content: flex-end; // Contingut alineat a la dreta
+            align-items: center;
+            margin-top: 1rem;
+        }
+    }
+
+    &-input {
+        width: 100%; 
+        padding: 0.75rem 1rem; 
+        border: 2px solid #FF9F1C; 
+        border-radius: 8px; 
+        font-size: 1rem; 
+        transition: all 0.3s ease; 
+
+        &:focus {
+            outline: none; // Sense contorn
+            border-color: #FF9F1C; 
+            box-shadow: 0 0 0 3px rgba(255, 159, 28, 0.2);
+        }
+
+        &-reserva,
+        &-data {
+            // Hereta els estils bàsics dels inputs
+            @extend .cerca-input;
+
+            // Estils específics si cal
+            &::-webkit-calendar-picker-indicator {
+                cursor: pointer; 
+                opacity: 0.7; // Opacitat reduïda
+            }
+        }
+    }
+
+    &-label {
+        color: white; 
+        font-weight: 500; 
+        font-size: 0.9rem; 
+        margin-bottom: 0.25rem;
+    }
+
+    &-button {
+        background-color: #FF9F1C;
+        color: white; 
+        border: none; 
+        padding: 0.75rem 2rem; 
+        border-radius: 8px; 
+        font-weight: 700; 
+        cursor: pointer; 
+        transition: all 0.3s ease;
+        min-width: 120px; 
+        text-align: center;
+
+        &:hover {
+            background-color: #e38e18; 
+            transform: translateY(-1px); // Lleuger desplaçament cap amunt
+        }
+
+        &:active {
+            transform: translateY(0); 
+        }
+    }
+}
+
+// Disseny responsiu
+@media screen and (min-width: 480px) {
+    .cercaRapida {
+        grid-template-columns: repeat(2, 1fr); // Dues columnes
+
+        .cerca-div-button {
+            grid-column: span 2; // Botó ocupa dues columnes
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cercaRapida {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Columnes automàtiques
+
+        .cerca-div-button {
+            grid-column: unset; // Restabliment de columnes
+            margin-top: 0; 
+            align-self: flex-end; // Alineació a la part inferior
+        }
+    }
+
+    .cerca-button {
+        width: auto; 
+        padding: 0.75rem 2rem; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cercaRapida {
+        grid-template-columns: repeat(4, 1fr) auto; // Quatre columnes i una automàtica
+    }
+}

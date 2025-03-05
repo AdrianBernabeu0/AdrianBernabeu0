@@ -1,0 +1,15 @@
+@use 'base/reset';
+@use 'layouts/header';
+@use 'layouts/footer';
+@use 'layouts/nav.scss';
+@use 'components/alerts';
+@use 'components/buttons';
+@use 'components/links';
+@use 'pages/home';
+@use 'pages/checkInList';
+@use 'pages/formulari-hotel';
+@use 'pages/quadre-comandaments';
+@use 'pages/login';
+@use 'pages/roomManagment';
+@use 'pages/seederHotel';
+@use 'pages/createReserva';

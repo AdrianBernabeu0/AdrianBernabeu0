@@ -1,0 +1,195 @@
+.contenedorBtnHome {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; /* Afegeix espai entre els botons */
+  margin-top: 20px;
+}
+
+.contenedorBtnHome a {
+  flex: 1; /* Assegura que tots els botons ocupin la mateixa amplada */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  height: 50px; /* Assegura una alçada uniforme */
+}
+
+
+.btn-primary {
+  background-color: #AE7854;
+  color: #F2F0EB;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #84583A;
+  transform: scale(1.01);
+}
+
+.check-in-link {
+  background-color: #AE7854; 
+  color: #F2F0EB; 
+  border: none;
+}
+
+.check-in-link:hover {
+  background-color: #84583A;
+  transform: scale(1.01);
+}
+
+.contenedorBtnHotel {
+  float: right;
+}
+
+.dialog-home {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: white;
+  width: 90%;
+  max-width: 500px;
+}
+
+.contenedorUsuari {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.targetaUsuari {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.targetaUsuari:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+}
+
+.idUsuari {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.nomUsuari {
+  color: black;
+  margin: 0;
+}
+
+.contenedorHoteles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contenedorHotel {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #F2F0EB;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contenedorHotel:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedorHotel img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.contenedorHotel img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.075);
+}
+
+.botoEnviarHotel {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #F2F0EB;
+  border-radius: 8px;
+  background-color: #F2F0EB;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.2s;
+}
+
+.botoEnviarHotel:hover {
+  background-color: #e2ded6;
+  transform: scale(1.05);
+}
+
+.titleCrearUsuari {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formCrearUsuari {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #F2F0EB;
+  border: 1px solid #AE7854;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.formLabelInputHome {
+  margin-bottom: 15px;
+}
+
+.labelFormCrearUsuari {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.check-in-link {
+  display: grid;
+  place-items: center;
+  color: #F2F0EB;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #AE7854;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%; /* Assegura que ocupi tota l'amplada del contenidor pare */
+  max-width: 670px; /* Limita l'amplada màxima */
+  height: 50px;
+  border: #AE7854;
+  margin: 0 10px; /* Centra horitzontalment */
+
+  &:hover {
+    background-color: #84583A;
+  }
+}
