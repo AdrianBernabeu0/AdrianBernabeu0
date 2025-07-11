@@ -1,0 +1,16 @@
+image: node:lts
+
+pages:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  before_script:
+    - cd astro
+    - npm install
+  script:
+    - npm run build
+    # Configuración específica para Astro
+    - mv dist ../public
+  artifacts:
+    paths:
+      - public

@@ -1,0 +1,63 @@
+---
+const { slug, subslug } = Astro.params;
+
+const currentLang = Astro.props.currentLang || 'ca'; // Idioma por defecto
+const languages = {
+  ca: { label: "CAT", flag: "/flags/catalana.png" },
+  es: { label: "ESP", flag: "/flags/espana.png" },
+  en: { label: "ENG", flag: "/flags/inglesa.png" },
+};
+const getLangUrl = (newLang) => {
+  if (subslug) {
+    return `/${newLang}/${slug}/${subslug}`;
+  }
+  return `/${newLang}/${slug}`;
+};
+---
+
+<div class="flex justify-end min-w-[90px] md:min-w-[40px] language-switcher">
+  <!-- Botón para abrir el menú -->
+  <a class="toggle-lang flex flex-col items-center gap-1 bg-transparent text-white p-0 py-1 cursor-pointer">
+    <img src={languages[currentLang].flag} alt={languages[currentLang].label} class="w-8 h-6" />
+    <div class="flex flex-row items-center gap-1">
+        <span class="text-xs">{languages[currentLang].label}</span>
+        <span class="text-xs">▼</span>
+    </div>
+  </a>
+  <!-- Menú desplegable -->
+  <div class="lang-menu absolute z-20 right-0 mt-14 bg-white border rounded-lg shadow-lg hidden w-32">
+    <a href={getLangUrl("ca")} class={`block px-4 py-2 hover:bg-gray-200 ${currentLang === 'ca' ? 'font-bold text-blue-600' : ''}`}>
+      <img src="/flags/catalana.png" alt="CAT" class="inline w-4 h-3 mr-2" /> Català
+    </a>
+    <a href={getLangUrl("es")} class={`block px-4 py-2 hover:bg-gray-200 ${currentLang === 'es' ? 'font-bold text-blue-600' : ''}`}>
+      <img src="/flags/espana.png" alt="ES" class="inline w-4 h-3 mr-2" /> Español
+    </a>
+    <a href={getLangUrl("en")} class={`block px-4 py-2 hover:bg-gray-200 ${currentLang === 'en' ? 'font-bold text-blue-600' : ''}`}>
+      <img src="/flags/inglesa.png" alt="EN" class="inline w-4 h-3 mr-2" /> English
+    </a>
+  </div>
+</div>
+
+<script>
+  function initLangSwitcher() {
+    const switchers = document.querySelectorAll(".language-switcher");
+
+    switchers.forEach((switcher) => {
+      const toggleButton = switcher.querySelector(".toggle-lang");
+      const menu = switcher.querySelector(".lang-menu");
+
+      toggleButton?.addEventListener("click", function (event) {
+        event.stopPropagation();
+        menu?.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!switcher.contains(event.target)) {
+          menu?.classList.add("hidden");
+        }
+      });
+    });
+  }
+
+  window.addEventListener("DOMContentLoaded", initLangSwitcher);
+</script>

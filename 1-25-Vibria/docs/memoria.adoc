@@ -1,0 +1,56 @@
+= ABP Projecte M12 - La Vibria
+
+== Introducció
+
+*Nom del projecte*: La Vibria
+
+*Membres de l'equip*  
+
+- Adrian Bernabeu Malia
+
+- Brian Tobias Arrua Dominguez
+
+- Óscar Ródenas Luján
+
+== Objectius de l'aplicació
+
+L’objectiu principal de l’aplicació és desenvolupar un lloc web per a l’empresa La Víbria, complint amb els requisits estètics i funcionals que ens han proporcionat. Per aconseguir-ho, s’ha utilitzat WordPress com a sistema de gestió de continguts (back-end), aprofitant la seva facilitat d’ús i familiaritat per part del client. Paral·lelament, s’ha implementat Astro per al desenvolupament del front-end, cosa que permet una presentació visual moderna, optimitzada i adaptada a les necessitats de disseny donats per ells.
+
+Aquest enfocament híbrid proporciona al client una interfície atractiva i ràpida (gràcies a Astro), mantenint alhora la possibilitat de gestionar el contingut de forma autònoma mitjançant WordPress, una eina que ja coneixen i dominen.
+
+
+== Base de dades
+
+
+== Figma
+link:https://www.figma.com/design/xcbDKD8c4Kc3IrBi37fRuX/Pagina-web-Vibria.org?node-id=0-1&t=z4X0vpXvdcZVZ8r7-1[Guia d'estils de la pàgina web]
+
+== Manual D'administracio 
+include::manualAdmin.adoc[]
+
+== Linies futures
+Una de les funcionalitats que no hem implementat en el projecte és el gest de deslizar (swipe) al menú. Actualment, es pot navegar entre pàgines fent clic als enllaços del menú, però no és possible canviar de pàgina simplement lliscant la pantalla.
+
+== Requisits no funcionals
+
+== Conclusions
+
+=== Conclusió grupal
+Considerem que la part més complexa del projecte va ser l’inici. Ens va costar trobar una solució que fos fàcil de gestionar tant per al client com per a nosaltres. Després d’analitzar diferents opcions, vam decidir utilitzar WordPress com a gestor de continguts i Astro per al desenvolupament del front-end.
+
+Un cop escollides les tecnologies, encara ens faltava saber com integrar-les. Després de fer diverses recerques, vam descobrir dos plugins molt útils: Advanced Custom Fields (ACF) i Custom Post Type UI (CPT). Aquests ens van permetre estructurar el contingut de WordPress de manera personalitzada i extreure la informació mitjançant l’API REST per mostrar-la amb Astro.
+
+Ens preocupava que el projecte resultés massa complex per al client, així que vam elaborar un manual d’usuari per facilitar-ne la gestió i l’ús.
+
+A nivell personal, creiem que aquest projecte ens ha ajudat molt a millorar la comunicació amb el client i a aprofundir en el coneixement de WordPress i Astro, dues eines que fins ara no havíem utilitzat d’aquesta manera.
+
+=== Conclusió individual
+
+Brian Tobias:
+Crec que el projecte ha anat bé, tot i que l’inici va ser complicat per culpa dels plugins i perquè no sabíem ben bé com enfocar-lo. Un cop vam arribar a una conclusió clara, tot va ser més fàcil, ja que ens ajudàvem entre nosaltres i cadascú tenia una tasca assignada. Això va fer que el treball fos més àgil i organitzat.
+Adrian Bernabeu:
+Penso que ha estat bastant be aquest projecte, també ha sigut un repte, ja que no teniem experiència amb WordPress i ens ha costat una mica integrar-ho amb Astro. Hem après a utilitzar ACF i CPT per estructurar el contingut de WordPress i extreure'l mitjançant l'API REST. També hem millorat la nostra capacitat de treball en equip i la comunicació amb el client, ja que hem hagut de coordinar-nos per complir els requisits del projecte. En general, crec que hem fet un bon treball.
+
+
+Óscar Ródenas: 
+Considero que aquest projecte ha sigut una bona oportunitat per treballar amb un client real i entendre varies dinàmiques que es donen en el món laboral. A l'hora de començar el projecte va ser un repte molt gran ja que no sabiem ni per on començar estavem molt perduts, però a mesura que vam anar avançant vam anar trobant solucions i vam aprendre a utilitzar les eines que ens van ser necessàries. Quan vam tenir les soluciones a má vam poder començar a treballar i a fer el projecte, i crec que el resultat final ha sigut molt bo. Hem pogut complir amb els requisits del client i hem après molt en el procés. La part més complicada ha sigut la integració de WordPress amb Astro, però gràcies als plugins ACF i CPT hem pogut estructurar el contingut de manera eficient i tenir que buscar tot i aprendre mentres ho treballavem. Estic molt content amb el resultat final i crec que hem fet un bon treball com a equip.
