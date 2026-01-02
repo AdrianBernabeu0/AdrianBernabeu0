@@ -1,27 +1,33 @@
-🚀 Proyecto para Vibria
-Este proyecto nace de la necesidad de modernizar la aplicacion web de una empresa real, manteniendo su flujo de trabajo actual. Hemos desarrollado una solución que combina la facilidad de gestión de contenidos de WordPress con Astro.
+= 🚀 Proyecto para Vibria
+Este proyecto nace de la necesidad de modernizar la aplicación web de una empresa real, manteniendo su flujo de trabajo actual. Hemos desarrollado una solución que combina la facilidad de gestión de contenidos de WordPress con la potencia de *Astro*.
 
-🛠️ El Reto Técnico
-La empresa necesitaba actualizar su web pero quería seguir utilizando WordPress para publicar sus entradas. Nuestra solución consistió en separar el backend del frontend:
+'''
 
-Backend: WordPress funcionando como gestor de contenidos.
+== 🛠️ El Reto Técnico
+La empresa necesitaba actualizar su web pero quería seguir utilizando WordPress para publicar sus entradas. Nuestra solución consistió en separar el backend del frontend (**Headless Architecture**):
 
-Frontend: Astro, obteniendo los datos a través de la WP REST API.
+* **Backend:** WordPress funcionando como gestor de contenidos (Back-office).
+* **Frontend:** Astro, obteniendo los datos a través de la **WP REST API**.
+* **Infraestructura:** Entorno de desarrollo contenedorizado con **Docker**.
 
-Infraestructura: Entorno de desarrollo con Docker.
+'''
 
-🏗️ Arquitectura del Proyecto
-Astro: Utilizado para generar un sitio estático de alto rendimiento.
+== 🏗️ Arquitectura del Proyecto
+=== Astro
+Utilizado para generar un **sitio estático (SSG)** de alto rendimiento. Al realizar el *build*, Astro consume los datos y genera archivos HTML puros, lo que garantiza una velocidad de carga máxima.
 
-WordPress REST API: El puente de datos que nos permite traer las publicaciones, imágenes y categorías al frontend de Astro.
+=== WordPress REST API
+El puente de datos que nos permite traer las publicaciones, imágenes y categorías al frontend de Astro de forma segura y eficiente.
 
-Docker: Gestión del entorno local (MySQL, WordPress y servidor web) para asegurar que todos los miembros del equipo trabajamos sobre la misma configuración.
+=== Docker
+Gestión del entorno local (MySQL, WordPress y servidor web) para asegurar que todos los miembros del equipo trabajamos sobre la misma configuración sin conflictos.
 
-👥 Colaboradores
+'''
+
+== 👥 Colaboradores
+
 Este proyecto ha sido desarrollado en equipo por:
 
-Adrián Bernabeu
-
-Oscar Rodenas
-
-Brian Arrua
+* **Adrián Bernabeu**
+* **Oscar Rodenas**
+* **Brian Arrua**
