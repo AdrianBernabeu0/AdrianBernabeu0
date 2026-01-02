@@ -1,28 +1,27 @@
-= Projecte Vibria
-En aquest projecte es farà una pàgina web per l'empresa de la Víbria.
-==== Membres del grup
-El nostre grup està compost per: Adrian Bernabeu, Brian Tobias Arrua, Oscar Rodenas.
+🚀 Proyecto para Vibria
+Este proyecto nace de la necesidad de modernizar la aplicacion web de una empresa real, manteniendo su flujo de trabajo actual. Hemos desarrollado una solución que combina la facilidad de gestión de contenidos de WordPress con Astro.
 
-=== IPS SERVERS AWS
-Màquina Producció: Brian Tobias Arrua Dominguez IP elastica en producciò:
+🛠️ El Reto Técnico
+La empresa necesitaba actualizar su web pero quería seguir utilizando WordPress para publicar sus entradas. Nuestra solución consistió en separar el backend del frontend:
 
-Vibria: https://13.219.51.66
+Backend: WordPress funcionando como gestor de contenidos.
 
-Wordpress: https://18.211.164.146
+Frontend: Astro, obteniendo los datos a través de la WP REST API.
 
-=== DNS del domini
+Infraestructura: Entorno de desarrollo con Docker.
 
-Vibria: https://vibria.vibriaoba.store/
+🏗️ Arquitectura del Proyecto
+Astro: Utilizado para generar un sitio estático de alto rendimiento.
 
-Wordpress: https://wordpress.vibriaoba.store/
+WordPress REST API: El puente de datos que nos permite traer las publicaciones, imágenes y categorías al frontend de Astro.
 
+Docker: Gestión del entorno local (MySQL, WordPress y servidor web) para asegurar que todos los miembros del equipo trabajamos sobre la misma configuración.
 
-=== Portfolis
+👥 Colaboradores
+Este proyecto ha sido desarrollado en equipo por:
 
-Adrián Bernabeu: https://portfolio25-adrianbernabeu0s-projects.vercel.app/
+Adrián Bernabeu
 
-Brian Tobias: https://portafolio-brian-arrua.vercel.app/
+Oscar Rodenas
 
-Oscar Rodenas: https://porfoli-oscar-rodenas.vercel.app/
-
-// === Video Vibria
+Brian Arrua
