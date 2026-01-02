@@ -10,6 +10,6 @@ Aplicacion dinamica creada con React y Vite que gestiona una lista de eventos, a
 - Implementacion de operadores ternarios 
 
 # Instalacion 
-npm install
-npm run dev
+- npm install
+- npm run dev
 
