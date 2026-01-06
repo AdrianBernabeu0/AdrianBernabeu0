@@ -24,6 +24,8 @@ const [eventos, setEventos] = useState(() => {
     };
     setEventos([...eventos, nuevoEvento]);
   };
+  const totalEventos = eventos.length;
+  const totalVip = eventos.filter(e => e.vip).length;
   useEffect(() => {
   localStorage.setItem("mis_eventos", JSON.stringify(eventos));
   document.title = `Tienes ${eventos.length} eventos`;}, 
@@ -32,6 +34,10 @@ const [eventos, setEventos] = useState(() => {
   return (
     <div style={{ padding: "20px" }}>
       <h1>📅 Gestión de Eventos</h1>
+      <div style={{ marginBottom: '20px', color: '#666' }}>
+        <p>Total de eventos: <strong>{totalEventos}</strong></p>
+        <p>Eventos VIP: <strong>{totalVip}</strong> ⭐</p>
+      </div>
       <Evento alAñadir={añadirEvento} />{" "}
       {eventos.map((evento) => (
         <div
