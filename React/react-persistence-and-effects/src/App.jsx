@@ -12,6 +12,9 @@ const [eventos, setEventos] = useState(() => {
   const guardados = localStorage.getItem("mis_eventos");
   return guardados ? JSON.parse(guardados) : listaInicial;
 });
+const [usuario, setUsuario] = useState(() => {
+  return localStorage.getItem("nombre_usuario") || "Invitado";
+});
   const eliminarEvento = (id) => {
     const nuevaLista = eventos.filter((evento) => evento.id !== id);
     setEventos(nuevaLista);
@@ -30,9 +33,14 @@ const [eventos, setEventos] = useState(() => {
   localStorage.setItem("mis_eventos", JSON.stringify(eventos));
   document.title = `Tienes ${eventos.length} eventos`;}, 
   [eventos]);
+  useEffect(() => {
+  localStorage.setItem("nombre_usuario", usuario);
+}, [usuario]);
 
   return (
     <div style={{ padding: "20px" }}>
+      <input type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)}
+      style={{ border: 'none', background: 'transparent', fontWeight: 'bold', fontSize: '1.2rem' }}/>
       <h1>📅 Gestión de Eventos</h1>
       <div style={{ marginBottom: '20px', color: '#666' }}>
         <p>Total de eventos: <strong>{totalEventos}</strong></p>
