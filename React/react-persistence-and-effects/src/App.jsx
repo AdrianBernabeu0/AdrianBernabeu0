@@ -27,6 +27,9 @@ const [usuario, setUsuario] = useState(() => {
     };
     setEventos([...eventos, nuevoEvento]);
   };
+
+  const [soloVip, setSoloVip] = useState(false);
+
   const totalEventos = eventos.length;
   const totalVip = eventos.filter(e => e.vip).length;
   useEffect(() => {
@@ -37,17 +40,24 @@ const [usuario, setUsuario] = useState(() => {
   localStorage.setItem("nombre_usuario", usuario);
 }, [usuario]);
 
+  const eventosAMostrar = soloVip 
+    ? eventos.filter(e => e.vip) 
+    : eventos;
+
   return (
     <div style={{ padding: "20px" }}>
       <input type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)}
       style={{ border: 'none', background: 'transparent', fontWeight: 'bold', fontSize: '1.2rem' }}/>
+      <button onClick={() => setSoloVip(!soloVip)}>
+      {soloVip ? "Ver Todos" : "Ver solo VIP ⭐"}
+      </button>
       <h1>📅 Gestión de Eventos</h1>
       <div style={{ marginBottom: '20px', color: '#666' }}>
         <p>Total de eventos: <strong>{totalEventos}</strong></p>
         <p>Eventos VIP: <strong>{totalVip}</strong> ⭐</p>
       </div>
       <Evento alAñadir={añadirEvento} />{" "}
-      {eventos.map((evento) => (
+      {eventosAMostrar.map((evento) => (
         <div
           key={evento.id}
           style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}
