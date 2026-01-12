@@ -1,0 +1,6 @@
+{
+  "eventos": [
+    { "id": 1, "nombre": "Concierto Rock Docker", "vip": true },
+    { "id": 2, "nombre": "Feria Tecnológica", "vip": false }
+  ]
+}
