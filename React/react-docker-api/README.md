@@ -3,6 +3,7 @@ Migración de datos locales a un servidor externo simulado con Docker.
 
 - **Consumo Asíncrono**: Uso de `fetch` dentro de `useEffect` para las peticiones.
 - **Renderizado Dinámico**: Transformación de datos de la API en elementos del DOM mediante `.map()`.
+- **Persistencia Real**: Guardado de datos en el archivo `db.json` mediante peticiones POST y volúmenes de Docker
 
 # Instalacion 
 

@@ -4,4 +4,5 @@ services:
     ports:
       - "3001:80"
     volumes:
-      - ./db.json:/data/db.json
+      - ./:/data
+    restart: always
