@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  color: white;
+  font-family: sans-serif;
+}
+.contenedorGeneral{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorPeliculas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+  width: 50%;
+  margin-top: 40px;
+}
+.tarjetaPelicula {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  border: 1px solid #333;
+}
+.tarjetaPelicula:hover {
+  transform: translateY(-10px); 
+  border-color: #e74c3c;
+}
+
+.infoPelicula {
+  padding: 15px;
+  text-align: center;
+}
+
+.infoPelicula h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.infoPelicula span {
+  background: #e74c3c;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}

@@ -13,14 +13,14 @@ function App() {
       .catch(error => console.error("Error:", error));
   }, []);
 
-  return (
-    <div>      
-      <div>
+  return ( 
+    <div className="contenedorGeneral">
+      <div className="contenedorPeliculas">
         {peliculas.map(peli => (
-          <div>
+          <div className="tarjetaPelicula">
             <img 
               src={peli.Poster}/>
-            <div>
+            <div className="infoPelicula">
               <h3>{peli.Title}</h3>
               <p>Año: {peli.Year}</p>
               <span>{peli.Type}</span>
@@ -28,7 +28,7 @@ function App() {
           </div>
         ))}
       </div>
-    </div>
+    </div>  
   );
 }
 
